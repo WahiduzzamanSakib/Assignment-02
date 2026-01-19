@@ -10,7 +10,7 @@
 body{
     background-color: #1A0B2E;
     color: white;
-    margin: 20px 50px;
+    /* margin: 20px 50px; */
 }
 p{
     font-size: 15px;
@@ -39,6 +39,21 @@ p{
     border-radius: 20px;
     color: green;
 }
+
+#tooltip{
+    background-color: #00FF88;
+   padding: 8px;
+   border-radius: 30%;
+   color: black;
+   border: 1px solid;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   right: 530px;
+   top: 250px;
+   z-index: 1;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -57,13 +72,19 @@ p{
     width: 200px;
     margin-left: 20px;
 }
+.logo:hover{
+   /* transform: scale(1.05); */
+   filter: brightness(3.5);
+  
+}
 
 /* 1st banner */
-.banner-01{
-    background-image: url(assets/footer-bg.png);
-    background-size: cover;
+.banner{
+    background-image: url(./assets/hero-bg.png);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    padding: 100px;
 }
 .circle{
     position: relative;
@@ -83,6 +104,7 @@ p{
     left: 45%;
     transform: translateX(-50%, -50%);
     z-index: 2;
+    position: relative;
 }
 .Tech{
     text-align: center;
@@ -96,13 +118,13 @@ p{
     gap: 5px;
     padding-bottom: 100px;
 }
-
-
-
 .podcast{
     text-align: center;
-    margin: 20px auto;
 }
+.podcast h1{
+    margin-bottom: 10px;
+}
+
 .join{
     margin: 20px 0;
 }
@@ -213,7 +235,24 @@ p{
   object-fit: cover;
   opacity: var(0.6);
 }
-
+.sponser{
+    display: flex;
+    margin: 25px auto;
+    gap: 40px;
+}
+.last{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.footerlogo{
+    background-image: url(assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 0;
+    padding: 100px;
+}
 
 
 
@@ -233,13 +272,15 @@ p{
     #Subscribe{
         display: none;
     }
-    .logo{
+    .logo img{
     margin-left: 2px;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
 } 
 .pointer{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   
 }
 .grid-container{
     grid-template-columns: repeat(1, 1fr);   
@@ -252,13 +293,45 @@ p{
     align-items: center;
     justify-items: center;
 }
-
 .card-container {
     display: grid;
     grid-template-columns: 1fr; 
     text-align: center;
-    height: 400px;
+    height: 420px;
     width: 85%;
   }
- 
+  .sponser{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  }
+  
+
+   
 }
+
+@media screen and  (min-width:576px) and (max-width:992px) {
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    text-align: center;
+    height: 350px;
+    width: 90%;
+}
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.top{  
+    left: 42%;
+}
+#tooltip{
+    right: 350px;
+   top: 230px;
+}
+
+}
+

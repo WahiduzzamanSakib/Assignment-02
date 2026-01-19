@@ -11,7 +11,7 @@
 <body>
     <header>
         <section>
-            <nav class="navbar">
+            <nav style="margin: 20px 50px;" class="navbar">
                 <div>
                     <img class="logo" src="assets/Capture.PNG" alt="">
                 </div>
@@ -22,12 +22,13 @@
                 </div>
                 <div>
                     <button id="Subscribe" class="btn-primary">Subscribe <img src="assets/ArrowRight.png"
-                            alt=""></button>
+                            alt=""></button>          
                 </div>
                 <span class="hamburger-menu"><img src="assets/hamburger-menu.png" alt=""></span>
             </nav>
+                
         </section>
-        <section class="banner-01">
+        <section class="banner">
             <div class="circle">
                 <img class="bottom" src="assets/hero-circle.png" alt="">
                 <img class="top" src="assets/microphone.png" alt="">
@@ -36,12 +37,14 @@
                 <h1>TechWave</h1>
                 <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
             </div>
-            <div class="line" style="margin: 20px auto;">
+            <div class="line" style="margin: 50px auto;">
                 <button class="btn-primary"> <img src="assets/spotify.png" alt="">Listen on Spotify</button>
                 <button class="massage"><img src="assets/message.png" alt="">Subscribe</button>
             </div>
+            <div id="tooltip">
+                     <span>NEW</span>
+                </div>
         </section>
-
 
         <section>
             <div class="podcast">
@@ -56,7 +59,7 @@
             </div>
 
             <!-- pointer -->
-            <div class="pointer">
+            <div style="margin: 20px 50px;" class="pointer">
                 <div>
                     <h1 class="box">150K+</h1>
                     <p>Monthly Listeners</p>
@@ -76,12 +79,11 @@
             </div>
         </section>
     </header>
-
     <main>
         <section>
             <h1 style="text-align: center; margin-bottom: 30px;">Why Choose TechWave</h1>
         </section>
-        <section class="grid-container">
+        <section style="margin: 20px 50px;" class="grid-container">
             <div class="grid-point" id="grid-1" >
                 <img src="assets/headphone.png" alt="">
                 <h3>Premium Audio Quality</h3>
@@ -113,10 +115,10 @@
         </section>
 
         <!-- videos -->
-        <div class="video-header">
+        <div class="video-header" >
          <h1>Featured Episodes</h1>
        </div>
-        <section class="video-container">
+        <section class="video-container" style=" margin: 20px 50px;">
         <div class="video">
           <iframe
             width="345"
@@ -163,7 +165,7 @@
             </div>
         </div>
     </section> 
-    <section>
+    <section style="margin: 20px 50px;">
            <div class="video-header">
             <h1>Meet the Host</h1>
            </div>
@@ -179,13 +181,22 @@
              <img src="assets/instagram.png" alt="">
              <img src="assets/youtube.png" alt="">
           </div>
+          </div>
     </section>
-    
-
-
-
     </main>
-
+<footer class="footerlogo">
+   <div class="last">
+   <div class="logo">
+    <img src="assets/Capture.PNG" alt="">
+    </div>
+    <div class="sponser">
+      <p><img src="assets/spotify.png" alt="">Spotify</p>
+      <p><img src="assets/apple-podcast.png" alt="">Apple Podcasts</p>
+      <p><img src="assets/youtube-podcast.png" alt="">Youtube</p>
+      <p><img src="assets/twitter.png" alt="">Twitter</p>
+   </div>
+    <p style="text-align: center;"><small>© 2026 TechWave Podcast. All rights reserved.</small></p>
+   </div>
+</footer>
 </body>
-
 </html>
