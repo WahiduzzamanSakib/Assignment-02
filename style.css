@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: #1A0B2E;
+    color: white;
+    margin: 20px 50px;
+}
+p{
+    font-size: 15px;
+}
+/* navbar */
+
+.btn-primary{
+    background: linear-gradient(135deg, #FFD166, #FF5F9E, #FF2FB2, #8A2BE2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 20px;
+    color: white;
+}
+.massage{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 12px;
+    border: 2px solid;
+    border-radius: 20px;
+    color: green;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+   font-size: 1.25rem;
+   align-items: center;
+}
+.menu{
+    display: flex;
+    gap: 32px;
+}
+.hamburger-menu{
+    display: none;
+}
+.logo{
+    width: 200px;
+    margin-left: 20px;
+}
+
+/* 1st banner */
+.banner-01{
+    background-image: url(assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.circle{
+    position: relative;
+    height: 400px;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    align-items: center;
+}
+.top{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translateX(-50%, -50%);
+    z-index: 2;
+}
+.Tech{
+    text-align: center;
+   margin-top: 20px;
+   margin-bottom: 50px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 100px;
+}
+
+
+
+.podcast{
+    text-align: center;
+    margin: 20px auto;
+}
+.join{
+    margin: 20px 0;
+}
+
+/* pointer */
+.box{
+    color:#00FF66;
+}
+.pointer{
+   display: flex;
+   justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+/* Grid container*/
+.grid-container{
+     display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr) ;
+        }
+.grid-1{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.grid-3{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+
+
+/* responsive codes */
+@media screen and (max-width:576px) {
+
+    body{
+    margin: 5px 10px;
+}
+    .hamburger-menu{
+        display: inline;
+    }
+    .menu{
+        display: none;
+    }
+    #Subscribe{
+        display: none;
+    }
+    .logo{
+    margin-left: 2px;
+} 
+.pointer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
