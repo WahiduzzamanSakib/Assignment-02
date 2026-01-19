@@ -121,18 +121,59 @@ p{
 /* Grid container*/
 .grid-container{
      display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 210px);
+    gap: 20px;
+    border-radius: 10px;
         }
-.grid-1{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+.grid-point{
+ border: 2px solid rgb(2, 2, 63);
+ border-radius: 20px;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px  2px 2px rgb(1, 1, 43);
 }
-.grid-3{
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+#grid-1{
+    grid-row: span 2;
 }
+#grid-3{
+    grid-column: span 2;
+}
+#grid-5{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* video-container */
+.video-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 80px auto;
+}
+
+.video{
+     border: 1px solid rgb(74, 15, 129);
+    border-radius: 30px;
+    height: 280px;
+    width: 350px;
+     box-shadow: 2px 2px  2px 2px rgb(1, 1, 43);   
+}
+.frame{
+    display: flex;
+    align-items: center; 
+}
+.latter{
+    padding: 20px;
+}
+#video-02{
+  width: 345px;
+  height: 150;
+}
+
+
+
 
 
 
@@ -156,7 +197,16 @@ p{
     margin-left: 2px;
 } 
 .pointer{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+.grid-container{
+    grid-template-columns: repeat(1, 1fr);   
+}
+
+/* video */
+.video-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 }
