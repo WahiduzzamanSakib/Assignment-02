@@ -99,10 +99,8 @@ p{
     align-items: center;
 }
 .top{
-    position: absolute;
     top: 35%;
     left: 45%;
-    transform: translateX(-50%, -50%);
     z-index: 2;
     position: relative;
 }
@@ -110,6 +108,9 @@ p{
     text-align: center;
    margin-top: 20px;
    margin-bottom: 50px;
+}
+.Tech h1{
+    margin: 15px auto;
 }
 .line{
     display: flex;
@@ -120,15 +121,21 @@ p{
 }
 .podcast{
     text-align: center;
+    margin: 50px auto;
 }
 .podcast h1{
-    margin-bottom: 10px;
+    margin: 15px;
 }
 
 .join{
     margin: 20px 0;
 }
-
+ #line{
+    width: 1200px; 
+    height: 0;
+    border: 1px solid cadetblue; 
+    margin: 50px 60px;
+ }
 /* pointer */
 .box{
     color:#00FF66;
@@ -237,6 +244,8 @@ p{
 }
 .sponser{
     display: flex;
+    align-items: center;
+    justify-self: center;
     margin: 25px auto;
     gap: 40px;
 }
@@ -254,17 +263,35 @@ p{
     padding: 100px;
 }
 
-
-
-
 /* responsive codes */
+
 @media screen and (max-width:576px) {
 
     body{
     margin: 5px 10px;
-}
+    }
+    #navlogo {
+        margin-left: -50px;
+    }
+    .top{
+    top: 53%;
+    left: 41%;
+    width: 80px;
+    }
+    .bottom{
+        width: 250px;
+    }
     .hamburger-menu{
         display: inline;
+        margin-right: -40px;
+    }
+    #tooltip{
+   right: 120px;
+   top: 230px;
+    }
+    .banner{
+         margin: 0;
+         padding: 0;
     }
     .menu{
         display: none;
@@ -278,6 +305,9 @@ p{
     text-align: center;
     justify-items: center;
 } 
+#line{
+    width: 80%; 
+ }
 .pointer{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -305,10 +335,15 @@ p{
     grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
+  } 
+  .last{
+    width: 100%;
+    height: 230px;
   }
-  
-
-   
+  .footerlogo{
+     margin: 0;
+    padding: 0;
+  }
 }
 
 @media screen and  (min-width:576px) and (max-width:992px) {
