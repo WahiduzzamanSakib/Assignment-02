@@ -202,7 +202,11 @@ p{
     border-radius: 30px;
     height: 280px;
     width: 350px;
-     box-shadow: 2px 2px  2px 2px rgb(1, 1, 43);   
+     box-shadow: 2px 2px  2px 2px rgb(1, 1, 43);  
+}
+#video-02{
+  width: 345px;
+  height: 150;
 }
 .frame{
     display: flex;
@@ -215,10 +219,7 @@ p{
 .latter{
     padding: 20px;
 }
-#video-02{
-  width: 345px;
-  height: 150;
-}
+
 
 /* Banner */
 .card-container{
